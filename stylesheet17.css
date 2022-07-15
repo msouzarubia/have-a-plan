@@ -1,0 +1,185 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+	background-image:url(fundo13.png);
+}
+footer{
+    background-color:#696969;
+	width:100%;
+	height:20px;
+	position:fixed;
+	bottom:0;
+	left:0;
+	text-align:center;
+	color:white;
+}
+footer .p-footer{
+	font-size:10px;
+	margin-top:5px;
+}
+
+.hap-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+
+.hap-phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.hap-phone img {
+	display:flex;
+    height: 50rem;
+	max-height:530px;
+	max-width:500px;
+	border-radius:11%;
+	margin:50px;
+
+}
+
+.hap-continue {
+    display: flex;
+    align-items: center; /* horizontal */
+    justify-content: space-around; /* vertical */
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+
+.group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+	background-color:#CDC9C9;
+}
+.group:nth-child(1) {
+    min-height: 19rem;
+}
+.have-a-plan{
+	font-family:mistral;
+	font-size:45px;
+	color:black;
+}
+
+.profile-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+	margin-top:20px;
+}
+
+.profile-photo img {
+    height: 5rem;
+}
+
+.hap-login {
+    background-color: #8B8682;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+	margin-top:25px;
+}
+.hap-logout {
+    color: blue;
+    margin-top: 1rem;
+}
+
+.not-account {
+    color: rgb(160, 160, 160);
+}
+
+.link-blue {
+    color: blue;
+}
+
+.get-the-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+.get-app{
+	color:#696969;
+	font-size:20px;
+}
+
+.download {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app-download {
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.app-download:nth-child(1) {
+    background-image: url('apple-button.png');
+}
+
+.app-download:nth-child(2) {
+    background-image: url('googleplay-button.png');
+}
+/* media queries */
+
+
+@media (max-width: 1024px) {
+    .hap-wrapper {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    body {
+        background-color: #ffffff;
+    }
+
+    .hap-wrapper {
+        width: 90%;
+    }
+
+    .hap-phone {
+        display: none;
+    }
+
+    .hap-continue {
+        width: 100%;
+    }
+    
+    .group {
+        border: 1px solid transparent;
+    }
+	
+}
